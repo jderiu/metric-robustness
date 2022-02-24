@@ -1,0 +1,16 @@
+{
+  "device": "cuda",
+  "domain": "convai2",
+  "max_len": 512,
+  "n_steps": 200,
+  "batch_size": 1,
+  "eval_batch_size": 8,
+  "gradient_accumulation_steps": 1,
+  "learning_rate": 3e-6,
+  "validation_step": 200,
+  "logging_step": 400,
+  "save_step": 2500,
+  "n_valid_samples": -1,
+  "load_checkpoint": false,
+  "checkpoint_mlm_nr": "26600"
+}

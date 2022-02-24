@@ -1,0 +1,38 @@
+{
+  "device": "cpu",
+  "domain": "convai2",
+  "experiment_name": "0",
+  "metric": "usr_ret",
+  "max_len": 512,
+  "max_context_len": 4,
+  "max_len_dial": 30,
+  "n_turns": 1,
+  "n_steps": 20,
+  "dial_batch_size": 2,
+  "eval_dial_batch_size": 2,
+  "n_ret": 1,
+  "n_sample_dialogues": 10,
+  "batch_size": 1,
+  "eval_batch_size": 1,
+  "memory_sample_batch": 2,
+  "gradient_accumulation_steps": 1,
+  "learning_rate": 3e-5,
+  "logging_step": 2,
+  "save_step": 2500,
+  "n_valid_samples": 16,
+  "load_checkpoint": true,
+  "checkpoint_mlm_nr": {
+    "convai2": "26600",
+    "dailydialog": "16000",
+    "empathetic": "1600"
+  },
+  "checkpoint_ret_nr": {
+    "convai2": "23600",
+    "dailydialog": "2800",
+    "empathetic": "3600"
+  },
+  "blender_bot_version": "facebook/blenderbot_small-90M",
+  "policy_nr": 2,
+  "valid_steps": 10,
+  "gamma": 0.99
+}

@@ -1,0 +1,1372 @@
+[
+  {
+    "dialogue_id": 326,
+    "turn_id": 4,
+    "system_name": "parrot_policy",
+    "context": [
+      "yea its fairly big . what color is your hair mine is blonde",
+      "my hair is a rainbow of colors . whats your favorite color ?",
+      "i like pink an awful lot"
+    ],
+    "response": [
+      "i've always wanted to dye my hair blonde my hair is a rainbow of colors whats your favorite color i like pink awful what kind"
+    ],
+    "avg_rating": 0.0
+  },
+  {
+    "dialogue_id": 961,
+    "turn_id": 4,
+    "system_name": "parrot_policy",
+    "context": [
+      "no , but do you like pizza ? it is my favourite food to eat everday",
+      "no , but i like to look at food with my big brown eyes and light skin .",
+      "ooh , brown eyes are my favourite color of eyes . i have hazle eyes"
+    ],
+    "response": [
+      "i've always wanted to look at food with my big brown eyes and light skin i have hazle eyes what kind of pizza do"
+    ],
+    "avg_rating": 0.0
+  },
+  {
+    "dialogue_id": 0,
+    "turn_id": 7,
+    "system_name": "parrot_policy",
+    "context": [
+      "i bet she appreciates that very much .",
+      "she raised me right , i am just like her .",
+      "my dad was always busy working at home depot"
+    ],
+    "response": [
+      "i've always wanted to raise you right i am just like her my dad was always busy working at home depot what kind of home depot"
+    ],
+    "avg_rating": 0.0
+  },
+  {
+    "dialogue_id": 870,
+    "turn_id": 3,
+    "system_name": "parrot_policy",
+    "context": [
+      "i love dancing and singing .",
+      "that is interesting . i would consider myself a gamer .",
+      "i like gaming now that i am in the us ."
+    ],
+    "response": [
+      "i've always wanted to dance and singing i would consider myself a gamer i like gaming now that i am in the us what kind"
+    ],
+    "avg_rating": 0.0
+  },
+  {
+    "dialogue_id": 715,
+    "turn_id": 0,
+    "system_name": "parrot_policy",
+    "context": [
+      "hi how are you this evening ?"
+    ],
+    "response": [
+      "i've always wanted to ask how you doing this evening what kind of food do you like to eat"
+    ],
+    "avg_rating": 0.0
+  },
+  {
+    "dialogue_id": 515,
+    "turn_id": 7,
+    "system_name": "parrot_policy",
+    "context": [
+      "wow . and you survived . kudos to you .",
+      "thank you . any kids for you ?",
+      "no , i had cancer that makes it impossible for me to have kids sadly ."
+    ],
+    "response": [
+      "i've always wanted to have cancer that makes it impossible for me to have kids sadly what kind of cancer did you have that made it"
+    ],
+    "avg_rating": 0.0
+  },
+  {
+    "dialogue_id": 831,
+    "turn_id": 6,
+    "system_name": "parrot_policy",
+    "context": [
+      "mm one year , we have just decided before this chat hehe",
+      "i wish you all the best . do you have great conversation",
+      "thank you ! where are you from ? did not ask"
+    ],
+    "response": [
+      "i've always wanted to just decide before this chat hehe i wish you all the best do you have great conversation thank you where are"
+    ],
+    "avg_rating": 0.0
+  },
+  {
+    "dialogue_id": 79,
+    "turn_id": 2,
+    "system_name": "parrot_policy",
+    "context": [
+      "are you having problems texting ?",
+      "i am an old retired guy , so i might be doing something wrong !",
+      "i am fine , just getting ready for a walk with my dog ."
+    ],
+    "response": [
+      "i've always wanted to be an old retired guy so i might be doing something wrong i am fine just getting ready for a walk with"
+    ],
+    "avg_rating": 0.0
+  },
+  {
+    "dialogue_id": 12,
+    "turn_id": 6,
+    "system_name": "parrot_policy",
+    "context": [
+      "i would love to travel to italy . i love baking cookies .",
+      "i would love to be a pastry chef , i make earl grey shortbread a lot .",
+      "i have never had earl grey shortbread only the tea ."
+    ],
+    "response": [
+      "i've always wanted to travel to italy i love baking cookies i would love to be a pastry chef i make earl grey short@@"
+    ],
+    "avg_rating": 0.0
+  },
+  {
+    "dialogue_id": 177,
+    "turn_id": 3,
+    "system_name": "parrot_policy",
+    "context": [
+      "i am , thank you so much ! it gave me a whole new outlook on life .",
+      "i am sure ! that is why i only eat raw foods .",
+      "how do you like it ? i have been looking for newer , healthier ways of eating ."
+    ],
+    "response": [
+      "i've always wanted to only eat raw foods how do you like it i have been looking for newer healthier ways of eating what kind"
+    ],
+    "avg_rating": 0.0
+  },
+  {
+    "dialogue_id": 801,
+    "turn_id": 6,
+    "system_name": "parrot_policy",
+    "context": [
+      "me to she is part husky very protective",
+      "i bet she is beautiful !",
+      "people say she is she is a very hyper dog"
+    ],
+    "response": [
+      "i've always wanted to part husky very protective i bet she is beautiful people say she is she is a very hyper dog what kind"
+    ],
+    "avg_rating": 0.0
+  },
+  {
+    "dialogue_id": 825,
+    "turn_id": 1,
+    "system_name": "parrot_policy",
+    "context": [
+      "hello ! how are you doing today ?",
+      "great . i have a few minutes until i go to work at the supermarket .",
+      "oh that is fun ! i am about to go help a homeless shelter"
+    ],
+    "response": [
+      "i've always wanted to help the homeless shelter i am about to go help a homeless shelter what kind of homeless shelter do you like to"
+    ],
+    "avg_rating": 0.0
+  },
+  {
+    "dialogue_id": 179,
+    "turn_id": 0,
+    "system_name": "parrot_policy",
+    "context": [
+      "hi , how are you doing today ?"
+    ],
+    "response": [
+      "i've always wanted to ask how are you doing today what kind of music do you like to listen to"
+    ],
+    "avg_rating": 0.0
+  },
+  {
+    "dialogue_id": 1,
+    "turn_id": 1,
+    "system_name": "parrot_policy",
+    "context": [
+      "hi ! how are you doing tonight ?",
+      "i am doing great . just relaxing with my two dogs .",
+      "great . in my spare time i do volunteer work ."
+    ],
+    "response": [
+      "i've always wanted to volunteer work in my spare time i do volunteer work what kind of volunteer work do you like to do in your"
+    ],
+    "avg_rating": 0.0
+  },
+  {
+    "dialogue_id": 217,
+    "turn_id": 5,
+    "system_name": "parrot_policy",
+    "context": [
+      "i am 19 years old and have long black hair . so i still live with my parents .",
+      "i have pale skin and large brown eyes . and i wear my bike helmet all the time .",
+      "sine i live with my parents they want me to finish school , i want to sing ."
+    ],
+    "response": [
+      "i've always wanted to live with my pale skin and large brown eyes and i wear my bike helmet all the time sine they want me"
+    ],
+    "avg_rating": 0.0
+  },
+  {
+    "dialogue_id": 372,
+    "turn_id": 2,
+    "system_name": "parrot_policy",
+    "context": [
+      "sure i am a good listening male",
+      "ok . the backseat of my pinto was filled with donuts . i ate them all waiting in traffic",
+      "i love donuts do u own a house"
+    ],
+    "response": [
+      "i've always wanted to eat the backseat of my pinto was filled with donuts i love donuts do you own a house what"
+    ],
+    "avg_rating": 0.0
+  },
+  {
+    "dialogue_id": 518,
+    "turn_id": 0,
+    "system_name": "parrot_policy",
+    "context": [
+      "hello there ! do you fancy a cup of tea ? or perhaps a good book ?"
+    ],
+    "response": [
+      "i've always wanted to fancy a cup of tea or perhaps a good book what kind of tea do you like to eat and what kind"
+    ],
+    "avg_rating": 0.0
+  },
+  {
+    "dialogue_id": 861,
+    "turn_id": 0,
+    "system_name": "parrot_policy",
+    "context": [
+      "hi how are you this evening ?"
+    ],
+    "response": [
+      "i've always wanted to ask how you doing this evening what kind of food do you like to eat"
+    ],
+    "avg_rating": 0.0
+  },
+  {
+    "dialogue_id": 218,
+    "turn_id": 2,
+    "system_name": "parrot_policy",
+    "context": [
+      "that is really great . i design video games",
+      "that sounds great . my grandkids would love that !",
+      "it is great . they should check out my game starcraft ."
+    ],
+    "response": [
+      "i've always wanted to design video games that sounds great my grandkids would love that they should check out my game starcraft they should"
+    ],
+    "avg_rating": 0.0
+  },
+  {
+    "dialogue_id": 436,
+    "turn_id": 0,
+    "system_name": "parrot_policy",
+    "context": [
+      "hi i am a musician with big dream"
+    ],
+    "response": [
+      "i've always wanted to be a musician with big dream what kind of music do you like to listen to"
+    ],
+    "avg_rating": 0.0
+  },
+  {
+    "dialogue_id": 373,
+    "turn_id": 3,
+    "system_name": "parrot_policy",
+    "context": [
+      "yes , that is me also . i go on trips with my church group every summer .",
+      "that is good ! i do not attend church but i help out at the homeless shelter .",
+      "how nice of you . our church group does many charitable services ."
+    ],
+    "response": [
+      "i've always wanted to go on trips with my church group every summer help out at the homeless shelter how nice of you to help out"
+    ],
+    "avg_rating": 0.0
+  },
+  {
+    "dialogue_id": 727,
+    "turn_id": 3,
+    "system_name": "parrot_policy",
+    "context": [
+      "wow , that is nice . tomorrow i will just take the bus to school",
+      "i used to ride the bus . now i drive my red nissan pathfinder .",
+      "i would buy one if i finish school . . i hate math"
+    ],
+    "response": [
+      "i've always wanted to take the bus to school i used to ride the bus now i drive my red nissan pathfinder i would buy"
+    ],
+    "avg_rating": 0.0
+  },
+  {
+    "dialogue_id": 820,
+    "turn_id": 4,
+    "system_name": "parrot_policy",
+    "context": [
+      "i am a prison guard at the jail , it is not easy at all",
+      "that sounds like a hard job . i am a christian teacher",
+      "lucky you , i have to deal with people fighting every day"
+    ],
+    "response": [
+      "i've always wanted to be a prison guard at the jail it is not easy at all that sounds like a hard job i am a"
+    ],
+    "avg_rating": 0.0
+  },
+  {
+    "dialogue_id": 575,
+    "turn_id": 0,
+    "system_name": "parrot_policy",
+    "context": [
+      "have you heard about the juggalos ? weird ."
+    ],
+    "response": [
+      "i've always wanted to hear about the juggalos what kind of music do you like to listen to? weird"
+    ],
+    "avg_rating": 0.0
+  },
+  {
+    "dialogue_id": 984,
+    "turn_id": 0,
+    "system_name": "parrot_policy",
+    "context": [
+      "hi i just finished my 100th birthday . i could live forever !"
+    ],
+    "response": [
+      "i've always wanted to finish my 100th birthday i could live forever what kind of food do you like to eat"
+    ],
+    "avg_rating": 0.0
+  },
+  {
+    "dialogue_id": 875,
+    "turn_id": 6,
+    "system_name": "parrot_policy",
+    "context": [
+      "it is tough and smelly . 25 people and 3 toilets .",
+      "that would be awful . you really should move .",
+      "i cant yet . need to save money , spend it too quickly ."
+    ],
+    "response": [
+      "i've always wanted to move 25 people and 3 toilets that would be awful you really should move i cant yet need to save money"
+    ],
+    "avg_rating": 0.0
+  },
+  {
+    "dialogue_id": 285,
+    "turn_id": 6,
+    "system_name": "parrot_policy",
+    "context": [
+      "i was to begin with . but it is better now .",
+      "maybe you can date when you get out . my dad tries to get blind dates for me .",
+      "oh , interesting . how do the blind dates usually go ?"
+    ],
+    "response": [
+      "i've always wanted to be to begin with but it is better now my dad tries to get blind dates for me oh interesting how do"
+    ],
+    "avg_rating": 0.0
+  },
+  {
+    "dialogue_id": 451,
+    "turn_id": 3,
+    "system_name": "parrot_policy",
+    "context": [
+      "what do you want to do",
+      "i am not really sure . i broken my arm skateboarding .",
+      "that sounds really awful . i am sorry"
+    ],
+    "response": [
+      "i've always wanted to break my arm skateboarding that sounds really awful i am sorry what kind of skate do you like to"
+    ],
+    "avg_rating": 0.0
+  },
+  {
+    "dialogue_id": 943,
+    "turn_id": 7,
+    "system_name": "parrot_policy",
+    "context": [
+      "yes , i think it would work well ! what do horses eat ? we are an omnivore household .",
+      "i have a special mix of grains and grasses i use",
+      "that is great ! are there other animals on the farm ?"
+    ],
+    "response": [
+      "i've always wanted to eat what do horses eat we are a omnivore household i have a special mix of grains and gra@@"
+    ],
+    "avg_rating": 0.0
+  },
+  {
+    "dialogue_id": 769,
+    "turn_id": 7,
+    "system_name": "parrot_policy",
+    "context": [
+      "exactly , give me a starbucks late and i am good for a week or two",
+      "dude i feel it . i just want to hang with my friends and enjoy life .",
+      "me too , and actually fit into a tanning bad , my skin must match my cloths ."
+    ],
+    "response": [
+      "i've always wanted to give me a starbucks late and i am good for a week or two dude i feel it i just want"
+    ],
+    "avg_rating": 0.0
+  },
+  {
+    "dialogue_id": 924,
+    "turn_id": 0,
+    "system_name": "parrot_policy",
+    "context": [
+      "hey ! what a beautiful day it is !"
+    ],
+    "response": [
+      "i've always wanted to talk to you what a beautiful day it is what kind of food do you like to eat what kind do you"
+    ],
+    "avg_rating": 0.0
+  },
+  {
+    "dialogue_id": 550,
+    "turn_id": 5,
+    "system_name": "parrot_policy",
+    "context": [
+      "my parents will not allow a tv , i graduate in two years .",
+      "we never had a television in my youth . keep you focused on your studies .",
+      "i am an honor student . what do you do ?"
+    ],
+    "response": [
+      "i've always wanted to graduate in two years we never had a television in my youth keep you focused on your studies i am an honor"
+    ],
+    "avg_rating": 0.0
+  },
+  {
+    "dialogue_id": 737,
+    "turn_id": 2,
+    "system_name": "parrot_policy",
+    "context": [
+      "do you go to school",
+      "i kind of do . mainly online courses for now . and you ?",
+      "i go for psychology . how about you"
+    ],
+    "response": [
+      "i've always wanted to go to school i kind of do mainly online courses for now and you go for psychology how about you what kind"
+    ],
+    "avg_rating": 0.0
+  },
+  {
+    "dialogue_id": 714,
+    "turn_id": 4,
+    "system_name": "parrot_policy",
+    "context": [
+      "i never go outside anymore , all i do is work the register",
+      "dang , i like mowing the lawn on sunny days",
+      "like listening to music while you mow ? i generally listen to country music"
+    ],
+    "response": [
+      "i've always wanted to mowing the lawn on sunny days like listening to music while you mow i generally listen to country music what"
+    ],
+    "avg_rating": 0.0
+  },
+  {
+    "dialogue_id": 397,
+    "turn_id": 4,
+    "system_name": "parrot_policy",
+    "context": [
+      "oh , nice ! i need to work out more .",
+      "what classes are you taking ? using the time off to hang out with my two dogs .",
+      "oh , nice i am majoring in art"
+    ],
+    "response": [
+      "i've always wanted to take what classes are you taking using the time off to hang out with my two dogs oh nice i am maj@@"
+    ],
+    "avg_rating": 0.0
+  },
+  {
+    "dialogue_id": 169,
+    "turn_id": 5,
+    "system_name": "parrot_policy",
+    "context": [
+      "it handles very well , and is very comfortable . you would like it .",
+      "does it have heated seats , that is my favorite , we could go rock climbing sometime .",
+      "it does have heated seats . really nice in the winter . let us do it !"
+    ],
+    "response": [
+      "it handles very well and is very comfortable you would like it does it have heated seats, that is my favorite we could go rock climbing sometime"
+    ],
+    "avg_rating": 0.0
+  },
+  {
+    "dialogue_id": 54,
+    "turn_id": 1,
+    "system_name": "parrot_policy",
+    "context": [
+      "hello . do you play any instruments ?",
+      "no i do not but i love dancing wildly to party music . do you own any pets ?",
+      "i do . i have a dog ."
+    ],
+    "response": [
+      "i've always wanted to play any instruments no i do not but i love dancing wildly to party music i do own any pets i have"
+    ],
+    "avg_rating": 0.0
+  },
+  {
+    "dialogue_id": 902,
+    "turn_id": 7,
+    "system_name": "parrot_policy",
+    "context": [
+      "india is not interesting for children . only for adults .",
+      "why is that ? kids can find interesting things no matter where they are .",
+      "poverty is everywhere . some people have no money for clothes ."
+    ],
+    "response": [
+      "i've always wanted to go to india is not interesting for children only for adults kids can find interesting things no matter where they are poverty"
+    ],
+    "avg_rating": 0.0
+  },
+  {
+    "dialogue_id": 710,
+    "turn_id": 1,
+    "system_name": "parrot_policy",
+    "context": [
+      "how are you doing today",
+      "hello , how are you today ?",
+      "i am doing really well"
+    ],
+    "response": [
+      "i've always wanted to ask how you doing today hello how are you today i am doing really well what kind of food do you like"
+    ],
+    "avg_rating": 0.0
+  },
+  {
+    "dialogue_id": 43,
+    "turn_id": 2,
+    "system_name": "parrot_policy",
+    "context": [
+      "cool , i deliver mail , and get a lot of martha catalogues !",
+      "i love to eat vegetables and unique things",
+      "that is great , i like my food grey , the color i like on everything !"
+    ],
+    "response": [
+      "i've always wanted to deliver mail and get a lot of martha catalogues i love to eat vegetables and unique things that is great"
+    ],
+    "avg_rating": 0.0
+  },
+  {
+    "dialogue_id": 384,
+    "turn_id": 4,
+    "system_name": "parrot_policy",
+    "context": [
+      "wish i did . i hate the factory makes my hair grey . need to dye it again",
+      "it hurts and this cast smells like a dead monkey butt , seriously , what color hair ?",
+      "blonde , do you do roleplay games ?"
+    ],
+    "response": [
+      "i've always wanted to dye my hair grey it hurts and this cast smells like a dead monkey butt what color hair do you like to"
+    ],
+    "avg_rating": 0.0
+  },
+  {
+    "dialogue_id": 544,
+    "turn_id": 3,
+    "system_name": "parrot_policy",
+    "context": [
+      "me too ! i aspire to become a physical therapist and run a 5k !",
+      "awesome . i just started a new job as a life coach",
+      "that is great ! i get straight as so maybe you could coach me in social skills ."
+    ],
+    "response": [
+      "i've always wanted to asto become a physical therapist and run a 5k awesome i just started a new job as a life"
+    ],
+    "avg_rating": 0.0
+  },
+  {
+    "dialogue_id": 517,
+    "turn_id": 4,
+    "system_name": "parrot_policy",
+    "context": [
+      "he did more than my taxes . ha ha . i have kids though they are good .",
+      "i love kids ! i teach at a school near my house .",
+      "welcome to our country . where are you from originally ?"
+    ],
+    "response": [
+      "i've always wanted to teach at a school near my house welcome to our country where are you from originally what kind of kids do you"
+    ],
+    "avg_rating": 0.0
+  },
+  {
+    "dialogue_id": 302,
+    "turn_id": 5,
+    "system_name": "parrot_policy",
+    "context": [
+      "it is good that he does not drink . skateboarders are cool , though .",
+      "yeah would be bad to see skateboarders drunk , huh ?",
+      "haha , yeah that could be bad ! i live in the city and see plenty of wipeouts ."
+    ],
+    "response": [
+      "i've always wanted to live in the city and see plenty of wipeouts what kind of skateboarders do you like"
+    ],
+    "avg_rating": 0.0
+  },
+  {
+    "dialogue_id": 147,
+    "turn_id": 6,
+    "system_name": "parrot_policy",
+    "context": [
+      "i could not stand to live inland , the ocean runs through my veins .",
+      "yes . i want to go more but no one to stay with 19 dogs .",
+      "maybe someone will come and dog sit for you ."
+    ],
+    "response": [
+      "i've always wanted to live inland the ocean runs through my veins i want to go more but no one to stay with 19 dogs maybe"
+    ],
+    "avg_rating": 0.0
+  },
+  {
+    "dialogue_id": 167,
+    "turn_id": 6,
+    "system_name": "parrot_policy",
+    "context": [
+      "that is neat ! i like to go to animal rights rallies ! do you own furs ?",
+      "nope , just faux . what is your gender ?",
+      "i am a woman ! what about you ?"
+    ],
+    "response": [
+      "i've always wanted to go to animal rights rallies do you own furs just faux what kind of furs do you like"
+    ],
+    "avg_rating": 0.0
+  },
+  {
+    "dialogue_id": 628,
+    "turn_id": 6,
+    "system_name": "parrot_policy",
+    "context": [
+      "i know . who even is the browns quarterback now",
+      "kizer . he actually is pretty good .",
+      "i know . i liked him at dame"
+    ],
+    "response": [
+      "i've always wanted to see who even is the browns quarterback now kizer actually is pretty good i liked him at dame what kind of"
+    ],
+    "avg_rating": 0.0
+  },
+  {
+    "dialogue_id": 629,
+    "turn_id": 7,
+    "system_name": "parrot_policy",
+    "context": [
+      "no me and my cats",
+      "that makes sense now . sorry for my misunderstanding .",
+      "that is okay . i spend time supporting animal rights now"
+    ],
+    "response": [
+      "i've always wanted to spend time supporting animal rights now what kind of cat do you like to eat that makes sense now that is okay"
+    ],
+    "avg_rating": 0.0
+  },
+  {
+    "dialogue_id": 515,
+    "turn_id": 5,
+    "system_name": "parrot_policy",
+    "context": [
+      "haha agreed ! or a lot . either way . i try to eat well though",
+      "me too . should i trade my mini van in for a sports car .",
+      "yes . who does not love a sports car ."
+    ],
+    "response": [
+      "i've always wanted to try to eat well though me too should i trade my mini van in for a sports car yes who does not"
+    ],
+    "avg_rating": 0.0
+  },
+  {
+    "dialogue_id": 656,
+    "turn_id": 5,
+    "system_name": "parrot_policy",
+    "context": [
+      "what do you do for a living ?",
+      "what games do your cats like to play ?",
+      "they like to chase laser pointers ."
+    ],
+    "response": [
+      "i've always wanted to work for a living what kind of laser pointers do your cats like to play what games do they like to"
+    ],
+    "avg_rating": 0.0
+  },
+  {
+    "dialogue_id": 271,
+    "turn_id": 2,
+    "system_name": "parrot_policy",
+    "context": [
+      "i just turned 18 yesterday ! it was a tough birthday though",
+      "really why ? my birthdays are great !",
+      "my boyfriend and i just broke up a couple months ago . i miss him"
+    ],
+    "response": [
+      "i've always wanted to turn 18 yesterday it was a tough birthday days are great i just broke up a couple months ago i miss him"
+    ],
+    "avg_rating": 0.0
+  },
+  {
+    "dialogue_id": 79,
+    "turn_id": 0,
+    "system_name": "parrot_policy",
+    "context": [
+      "hi , i m susie . how are you ?"
+    ],
+    "response": [
+      "i've always wanted to be susie what kind of music do you like to listen to?"
+    ],
+    "avg_rating": 0.0
+  },
+  {
+    "dialogue_id": 734,
+    "turn_id": 5,
+    "system_name": "parrot_policy",
+    "context": [
+      "that sounds very comfortable . i like wearing ruffle shirts too .",
+      "i think ruffles are very cute . what do you do in your spare time ?",
+      "i wished i was skinny i like staying in shape though ."
+    ],
+    "response": [
+      "i've always wanted to wear ruffle shirts too i think ruffles are very cute what kind of ruffles do you like to wear"
+    ],
+    "avg_rating": 0.0
+  },
+  {
+    "dialogue_id": 361,
+    "turn_id": 4,
+    "system_name": "parrot_policy",
+    "context": [
+      "more active than me i drive everywhere in my big truck . do you drive ?",
+      "yeah i drive sometimes to my parents to see my dog called trooper .",
+      "aww , i do not have pets except the animals on the farm my parents have"
+    ],
+    "response": [
+      "i've always wanted to drive everywhere in my big truck yeah i drive sometimes to my parents to see my dog called trooper aw@@"
+    ],
+    "avg_rating": 0.0
+  },
+  {
+    "dialogue_id": 444,
+    "turn_id": 7,
+    "system_name": "parrot_policy",
+    "context": [
+      "atleast you are not old and fat !",
+      "definitely not . would not be able to fit my leggings !",
+      "you would just have to workout more then ."
+    ],
+    "response": [
+      "i've always wanted to be old and fat you would just have to workout more then what kind of leggings do you like"
+    ],
+    "avg_rating": 0.0
+  },
+  {
+    "dialogue_id": 667,
+    "turn_id": 3,
+    "system_name": "parrot_policy",
+    "context": [
+      "nemo , i love him already . its a tea mix , green and black .",
+      "the tea sounds cool . is there honey in it ?",
+      "i add honey to it , yes . i drink it while running museum tours ."
+    ],
+    "response": [
+      "i've always wanted to add honey to it yes i drink it while running museum tours what kind of museum tours do you like to run"
+    ],
+    "avg_rating": 0.0
+  },
+  {
+    "dialogue_id": 432,
+    "turn_id": 5,
+    "system_name": "parrot_policy",
+    "context": [
+      "i just study economics and work on the house i just bought",
+      "ugh study ! no thank you ! i would rather go out and party",
+      "do you like to party everyday ?"
+    ],
+    "response": [
+      "i've always wanted to study economics and work on the house i just bought ugh study i would rather go out and party do you like"
+    ],
+    "avg_rating": 0.0
+  },
+  {
+    "dialogue_id": 54,
+    "turn_id": 5,
+    "system_name": "parrot_policy",
+    "context": [
+      "any of them that are interesting",
+      "cool ! do you like parties ?",
+      "i do . we sing folk songs at most of ours . i play guitar ."
+    ],
+    "response": [
+      "i've always wanted to sing folk songs at most ours i play guitar what kind of folk songs do you like to sing at most of"
+    ],
+    "avg_rating": 0.0
+  },
+  {
+    "dialogue_id": 777,
+    "turn_id": 0,
+    "system_name": "parrot_policy",
+    "context": [
+      "hello , how are you this evening ?"
+    ],
+    "response": [
+      "i've always wanted to ask how are you doing this evening what kind of music do you like to listen to"
+    ],
+    "avg_rating": 0.0
+  },
+  {
+    "dialogue_id": 798,
+    "turn_id": 0,
+    "system_name": "parrot_policy",
+    "context": [
+      "good morning , how are you ?"
+    ],
+    "response": [
+      "i've always wanted to ask how you feel about good morning how are you doing what kind of food do you like to eat what kind"
+    ],
+    "avg_rating": 0.0
+  },
+  {
+    "dialogue_id": 209,
+    "turn_id": 0,
+    "system_name": "parrot_policy",
+    "context": [
+      "i live on cloud nine ."
+    ],
+    "response": [
+      "i've always wanted to live on cloud nine what kind of cloud nine do you like to watch?"
+    ],
+    "avg_rating": 0.0
+  },
+  {
+    "dialogue_id": 52,
+    "turn_id": 7,
+    "system_name": "parrot_policy",
+    "context": [
+      "a change of style is always a good confidence booster .",
+      "yeah , that is a nice thought . do you have kids ?",
+      "i do not . my fiance and i do not want any ."
+    ],
+    "response": [
+      "i've always wanted to change of style is always a good confidence booster i do not have kids what kind of changes do you like"
+    ],
+    "avg_rating": 0.0
+  },
+  {
+    "dialogue_id": 884,
+    "turn_id": 5,
+    "system_name": "parrot_policy",
+    "context": [
+      "ok lets play a game , you can meet me on moon ?",
+      "no , i am unable to travel to the moon . i have to work",
+      "i will build you a spaceship to get here"
+    ],
+    "response": [
+      "i've always wanted to meet you on moon you can meet me on moon i am unable to travel to the moon i have to work"
+    ],
+    "avg_rating": 0.0
+  },
+  {
+    "dialogue_id": 842,
+    "turn_id": 2,
+    "system_name": "parrot_policy",
+    "context": [
+      "not really , allergic to dogs , i do like fancy tea though",
+      "i love tea , do you enjoy sports at all ?",
+      "i lost hearing in one ear , so no sports for me , do you like to read ?"
+    ],
+    "response": [
+      "i've always wanted to like fancy tea though i love tea i lost hearing in one ear so no sports for me do you like to"
+    ],
+    "avg_rating": 0.0
+  },
+  {
+    "dialogue_id": 98,
+    "turn_id": 0,
+    "system_name": "parrot_policy",
+    "context": [
+      "hello , how are you tonight ?"
+    ],
+    "response": [
+      "i've always wanted to ask how are you doing tonight what kind of music do you like to listen to"
+    ],
+    "avg_rating": 0.0
+  },
+  {
+    "dialogue_id": 122,
+    "turn_id": 5,
+    "system_name": "parrot_policy",
+    "context": [
+      "you are too young to retire , what you going to do ?",
+      "i may visit my grown children since they never visit me .",
+      "that is so good to know , it really scares me"
+    ],
+    "response": [
+      "i've always wanted to visit my grown children since they never visit me that is so good to know it really scares me what kind of"
+    ],
+    "avg_rating": 0.0
+  },
+  {
+    "dialogue_id": 767,
+    "turn_id": 2,
+    "system_name": "parrot_policy",
+    "context": [
+      "i am doing well . glad the crops are in for the fall .",
+      "oh great me , my job really makes me feel bad",
+      "sorry to hear that . i help my father not my own job . what do you do ?"
+    ],
+    "response": [
+      "i've always wanted to help my father not my own job what kind of crops do you like to grow for the fall it's"
+    ],
+    "avg_rating": 0.0
+  },
+  {
+    "dialogue_id": 100,
+    "turn_id": 3,
+    "system_name": "parrot_policy",
+    "context": [
+      "yeah , i have a weakness for cats and vanilla ice cream , they are the best !",
+      "my weakness is eating when i am bored",
+      "what is your favorite season ? mine is winter !"
+    ],
+    "response": [
+      "i've always wanted to have a weakness for cats and vanilla ice cream they are the best my weakness is eating when i am bored what"
+    ],
+    "avg_rating": 0.0
+  },
+  {
+    "dialogue_id": 865,
+    "turn_id": 3,
+    "system_name": "parrot_policy",
+    "context": [
+      "we are going to the park . e do it once a week . how about you ?",
+      "i am getting ready to go mountain biking . it is fun !",
+      "we are going to get my fav chocolate ice cream on the way home . have fun !"
+    ],
+    "response": [
+      "i've always wanted to go to the park i am getting ready to go mountain biking it is fun we are going to get my"
+    ],
+    "avg_rating": 0.0
+  },
+  {
+    "dialogue_id": 848,
+    "turn_id": 3,
+    "system_name": "parrot_policy",
+    "context": [
+      "that sounds very interesting for you .",
+      "do you have any allergies ? i have one to water .",
+      "no i do not . i work on electricity ."
+    ],
+    "response": [
+      "i've never had an allergies i have one to water no i do not what kind of electricity do you like to work on"
+    ],
+    "avg_rating": 0.0
+  },
+  {
+    "dialogue_id": 686,
+    "turn_id": 6,
+    "system_name": "parrot_policy",
+    "context": [
+      "i eat broccoli all the time .",
+      "super ! also we can go running together",
+      "sounds like fun , i cannot wait !"
+    ],
+    "response": [
+      "i've always wanted to eat broccoli all the time also we can go running together sounds like fun i cannot wait what kind of"
+    ],
+    "avg_rating": 0.0
+  },
+  {
+    "dialogue_id": 118,
+    "turn_id": 6,
+    "system_name": "parrot_policy",
+    "context": [
+      "all in the family career wise nice",
+      "yeah , i followed in their footsteps .",
+      "you must have a lot to talk to them about"
+    ],
+    "response": [
+      "i've always wanted to follow in their footsteps i must have a lot to talk to them about what kind of family career do you follow"
+    ],
+    "avg_rating": 0.0
+  },
+  {
+    "dialogue_id": 157,
+    "turn_id": 5,
+    "system_name": "parrot_policy",
+    "context": [
+      "i used to be an alcoholic so no can do",
+      "i tend to stick to my water only . soda is worse !",
+      "that is what everyone should strive for"
+    ],
+    "response": [
+      "i've always wanted to be an alcoholic so no can do i tend to stick to my water only soda is worse what kind of soda"
+    ],
+    "avg_rating": 0.0
+  },
+  {
+    "dialogue_id": 539,
+    "turn_id": 3,
+    "system_name": "parrot_policy",
+    "context": [
+      "put arnica on them . my new job is with a naturopath they use that all the time",
+      "i have never heard of a naturopath , but my husband is a doctor",
+      "trying to have body heal itself . wish medical insurance covered it ."
+    ],
+    "response": [
+      "i've always wanted to put arnica on them all the time i have never heard of a naturopath but my husband is"
+    ],
+    "avg_rating": 0.0
+  },
+  {
+    "dialogue_id": 650,
+    "turn_id": 2,
+    "system_name": "parrot_policy",
+    "context": [
+      "i am currently watching football",
+      "i am watching birds with my cat . what your favorite football team ?",
+      "what are you up to ?"
+    ],
+    "response": [
+      "i've always wanted to watch football i am watching birds with my cat what kind of birds do you like to watch with your cat what"
+    ],
+    "avg_rating": 0.0
+  },
+  {
+    "dialogue_id": 854,
+    "turn_id": 3,
+    "system_name": "parrot_policy",
+    "context": [
+      "i learned how to cook when i was laid off and stayed home with my son",
+      "i own a yacht but also rent it out",
+      "that sounds fun , i will have to talk about a boat with my wife , she loves water ."
+    ],
+    "response": [
+      "i've always wanted to learn how to cook when i was laid off and stayed home with my son i own a yacht but also rent"
+    ],
+    "avg_rating": 0.0
+  },
+  {
+    "dialogue_id": 614,
+    "turn_id": 7,
+    "system_name": "parrot_policy",
+    "context": [
+      "softball is probably my favorite hobby .",
+      "nice . do you play a lot of it at the beach ?",
+      "no . haha . mostly in a baseball diamond ."
+    ],
+    "response": [
+      "i've always wanted to play a lot of it at the beach mostly in a baseball diamond what kind of softball do you like to play"
+    ],
+    "avg_rating": 0.0
+  },
+  {
+    "dialogue_id": 466,
+    "turn_id": 6,
+    "system_name": "parrot_policy",
+    "context": [
+      "oh that is nice , i am more into classical music",
+      "yes well i love disney musicals .",
+      "i like the movie tangled a lot , but frozen is nice too"
+    ],
+    "response": [
+      "i've always wanted to be more into classical music yes well i love disney musicals i like the movie tangled a lot but frozen is nice"
+    ],
+    "avg_rating": 0.0
+  },
+  {
+    "dialogue_id": 575,
+    "turn_id": 2,
+    "system_name": "parrot_policy",
+    "context": [
+      "no man . i like the insane clown posse and all but not so much like the juggalos",
+      "i do not like clowns . they are scary to a kid like me",
+      "dude , the band man . anyway i would rather larp than paint my face like a rocker"
+    ],
+    "response": [
+      "i've always wanted to like the insane clown posse and all but not so much like the juggalos i do not like"
+    ],
+    "avg_rating": 0.0
+  },
+  {
+    "dialogue_id": 223,
+    "turn_id": 3,
+    "system_name": "parrot_policy",
+    "context": [
+      "lol . . . i love chicken . i will be eating pizza with an artist i represent and my dog charlie .",
+      "cool ! so what do you do for a living ? i am a bartender through college .",
+      "i produce music for a handful of rap artists . as well as eat a lot of pizza !"
+    ],
+    "response": [
+      "i've always wanted to be a bartender through college i produce music for a handful of rap artists as well as eat a lot of pizza"
+    ],
+    "avg_rating": 0.0
+  },
+  {
+    "dialogue_id": 895,
+    "turn_id": 0,
+    "system_name": "parrot_policy",
+    "context": [
+      "hello . how are you ? tell me about yourself ."
+    ],
+    "response": [
+      "i've always wanted to tell you about yourself tell me what kind of music do you like to listen to tell me about you what kind"
+    ],
+    "avg_rating": 0.0
+  },
+  {
+    "dialogue_id": 70,
+    "turn_id": 5,
+    "system_name": "parrot_policy",
+    "context": [
+      "i got really into running after i beat cancer",
+      "wow you must be brave",
+      "just determined . i am not taking my second chance for granted"
+    ],
+    "response": [
+      "i've always wanted to get really into running after i beat cancer i am not taking my second chance for granted what kind of running do"
+    ],
+    "avg_rating": 0.0
+  },
+  {
+    "dialogue_id": 808,
+    "turn_id": 4,
+    "system_name": "parrot_policy",
+    "context": [
+      "very cool , very cool . i manage a store .",
+      "do you sell wine in your store ?",
+      "yes , i do . ohio valley is our specialty ."
+    ],
+    "response": [
+      "i've always wanted to manage a store do you sell wine in your store yes i do. ohio valley is our specialty what kind of"
+    ],
+    "avg_rating": 0.0
+  },
+  {
+    "dialogue_id": 423,
+    "turn_id": 3,
+    "system_name": "parrot_policy",
+    "context": [
+      "yeah . i know that one too . i am more into meditation",
+      "that is absolutely great just fantastic",
+      "do you consider yourself spiritual ?"
+    ],
+    "response": [
+      "i've always wanted to meditate that is absolutely great just fantastic do you consider yourself spiritual what kind of meditation do you like to do"
+    ],
+    "avg_rating": 0.0
+  },
+  {
+    "dialogue_id": 964,
+    "turn_id": 6,
+    "system_name": "parrot_policy",
+    "context": [
+      "that is sad . my daughter has lots of friends . her name is amalia .",
+      "i like her name ! it is so pretty .",
+      "her full name is amalia reina"
+    ],
+    "response": [
+      "i've always wanted to have lots of friends her name is amalia reina what kind of amalia do you like to call her"
+    ],
+    "avg_rating": 0.0
+  },
+  {
+    "dialogue_id": 917,
+    "turn_id": 1,
+    "system_name": "parrot_policy",
+    "context": [
+      "hey my name is emily , could i get yours ?",
+      "hello emily , my name is kim . what have you been up to today ?",
+      "just been waiting tables all day , now i am just trying to unwind"
+    ],
+    "response": [
+      "i've always wanted to get yours hello emily my name is kim what have you been up to today just been waiting tables all day now"
+    ],
+    "avg_rating": 0.0
+  },
+  {
+    "dialogue_id": 289,
+    "turn_id": 2,
+    "system_name": "parrot_policy",
+    "context": [
+      "are all of the bars and clubs closed tonight ?",
+      "i am too young to know .",
+      "gotcha , you should never know what they are ."
+    ],
+    "response": [
+      "i've always wanted to go to a bar and clubs closed tonight i am too young you should never know what they are what kind of"
+    ],
+    "avg_rating": 0.0
+  },
+  {
+    "dialogue_id": 720,
+    "turn_id": 6,
+    "system_name": "parrot_policy",
+    "context": [
+      "that is great . do you eat meat ? because i do",
+      "yeah i bet you do , no i am vegan and i am proud",
+      "oh that is good for you"
+    ],
+    "response": [
+      "i've always wanted to eat meat because i do yeah i bet you do no i am vegan and i am proud oh that is"
+    ],
+    "avg_rating": 0.0
+  },
+  {
+    "dialogue_id": 744,
+    "turn_id": 3,
+    "system_name": "parrot_policy",
+    "context": [
+      "i hate halloween man because everyone dresses up as animals . makes me feel bad .",
+      "i understand . it is very scare",
+      "not scary so much as i just get depressed . everyone eats animals on holidays ."
+    ],
+    "response": [
+      "i've always wanted to hate halloween man because everyone dresses up as animals makes me feel bad it is very scare not scary so much as"
+    ],
+    "avg_rating": 0.0
+  },
+  {
+    "dialogue_id": 130,
+    "turn_id": 6,
+    "system_name": "parrot_policy",
+    "context": [
+      "just cannot wait to get out of this small town and move to a bigger city .",
+      "good luck with moving and your studies",
+      "good luck with the bees , and good luck to your wife on the lawyer deal"
+    ],
+    "response": [
+      "i've always wanted to get out of this small town and move to a bigger city good luck with moving with the bees and good luck"
+    ],
+    "avg_rating": 0.0
+  },
+  {
+    "dialogue_id": 798,
+    "turn_id": 1,
+    "system_name": "parrot_policy",
+    "context": [
+      "good morning , how are you ?",
+      "hello ! i am doing well , thanks . yourself ?",
+      "i am okay . watching the horses graze in the pasture ."
+    ],
+    "response": [
+      "i've always wanted to watch the horses graze in the pasture what kind of horses do you like to watch?"
+    ],
+    "avg_rating": 0.0
+  },
+  {
+    "dialogue_id": 270,
+    "turn_id": 6,
+    "system_name": "parrot_policy",
+    "context": [
+      "dang get me yo feels me ?",
+      "yes . what music do you listen when driving your rolls royce ?",
+      "i listen to john denver cuz we rocky mountain high"
+    ],
+    "response": [
+      "i've always wanted to listen to john denver cuz we rocky mountain high what kind of john denver music do you like when driving your"
+    ],
+    "avg_rating": 0.0
+  },
+  {
+    "dialogue_id": 10,
+    "turn_id": 1,
+    "system_name": "parrot_policy",
+    "context": [
+      "how are you ? i am tired of my parents bothering me , hoping to move out soon .",
+      "i completely get it . my mom is way too traditional for me !",
+      "i never drink or use drugs . i am 19 and just want to see my friends ."
+    ],
+    "response": [
+      "i've always wanted to move out soon i completely get it my mom is way too traditional for me i never drink or use drugs i"
+    ],
+    "avg_rating": 0.0
+  },
+  {
+    "dialogue_id": 621,
+    "turn_id": 0,
+    "system_name": "parrot_policy",
+    "context": [
+      "how are you doing today"
+    ],
+    "response": [
+      "i've always wanted to ask how you doing today what kind of food do you like to eat"
+    ],
+    "avg_rating": 0.0
+  },
+  {
+    "dialogue_id": 41,
+    "turn_id": 7,
+    "system_name": "parrot_policy",
+    "context": [
+      "so a gym teacher ? or trainer ?",
+      "i do not really like labels",
+      "well okay then lol i am not sure if that would be a label"
+    ],
+    "response": [
+      "i've always wanted to be a gym teacher or trainer i do not really like labels well okay then i am not sure if that would"
+    ],
+    "avg_rating": 0.0
+  },
+  {
+    "dialogue_id": 351,
+    "turn_id": 1,
+    "system_name": "parrot_policy",
+    "context": [
+      "hi how are you doing ?",
+      "i am enjoying a burger and fries , you ?",
+      "i just ate a sandwich tonight it was good too ."
+    ],
+    "response": [
+      "i've always wanted to enjoy a burger and fries you just ate a sandwich tonight it was good what kind of burger do you like to"
+    ],
+    "avg_rating": 0.0
+  },
+  {
+    "dialogue_id": 555,
+    "turn_id": 4,
+    "system_name": "parrot_policy",
+    "context": [
+      "18 . i hate sports just as much as math class .",
+      "i am with you on hating math . i like nhl hockey though .",
+      "is that the skiing thing ? i like that ."
+    ],
+    "response": [
+      "i've always wanted to hate sports just as much as math class i am with you on hating math i like nhl hockey though is that"
+    ],
+    "avg_rating": 0.0
+  },
+  {
+    "dialogue_id": 199,
+    "turn_id": 6,
+    "system_name": "parrot_policy",
+    "context": [
+      "i sure hope not , they are scary !",
+      "amazon is a great place to order books",
+      "oh yeah that is a fact ."
+    ],
+    "response": [
+      "i've always wanted to order books oh yeah that is a fact what kind of books do you like to order amazon is a great place"
+    ],
+    "avg_rating": 0.0
+  },
+  {
+    "dialogue_id": 47,
+    "turn_id": 7,
+    "system_name": "parrot_policy",
+    "context": [
+      "how do you like your new life since you moved ?",
+      "it is not so fun i have 2 friend who speak a different langues",
+      "man i really need to go to the bathroom , what language they speak ?"
+    ],
+    "response": [
+      "i've always wanted to move since i moved it is not so fun i have 2 friend who speak a different langues man i really"
+    ],
+    "avg_rating": 0.0
+  },
+  {
+    "dialogue_id": 502,
+    "turn_id": 6,
+    "system_name": "parrot_policy",
+    "context": [
+      "that is probably a lot healthier and saves you money . i eat out all the time .",
+      "my dad had me hooked on high protein foods like fish and chicken when i was training .",
+      "what are you training for ?"
+    ],
+    "response": [
+      "i've always wanted to eat out all the time my dad had my hooked on high protein foods like fish and chicken when i was training"
+    ],
+    "avg_rating": 0.0
+  }
+]

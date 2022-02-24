@@ -1,0 +1,26 @@
+{
+  "device": "cuda",
+  "metric": "usr_ret",
+  "domain": "convai2",
+  "max_len": 512,
+  "n_steps": 200,
+  "batch_size": 1,
+  "eval_batch_size": 4,
+  "gradient_accumulation_steps": 1,
+  "learning_rate": 3e-5,
+  "validation_step": 1,
+  "logging_step": 2,
+  "save_step": 2500,
+  "n_valid_samples": 16,
+  "load_checkpoint": true,
+  "checkpoint_mlm_nr": {
+    "convai2": "26600",
+    "dailydialog": "16000",
+    "empathetic": "1600"
+  },
+  "checkpoint_ret_nr": {
+    "convai2": "23600",
+    "dailydialog": "2800",
+    "empathetic": "3600"
+  }
+}
