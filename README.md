@@ -58,9 +58,9 @@ If you use this code, please cite us:
 @inproceedings{deriu2022metric_robustness,
   title = {{Probing the Robustness of Trained Metrics for Conversational Dialogue Systems}},
   author = {Deriu, Jan and Tuggener, Don and von D{\"a}niken, Pius and Cieliebak, Mark},
-  booktitle = {Proceedings of the 2022 Conference on Empirical Methods in Natural Language Processing},
-  address = {Online},
-  year = {2020},
+  booktitle = {Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics},
+  address = {Dublin},
+  year = {2022},
 }
 
 
