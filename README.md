@@ -1,4 +1,4 @@
-# Code for the Paper: Probing the Robustness of Trained Metrics for Conversational Dialogue Systems
+# Code for the Paper: [Probing the Robustness of Trained Metrics for Conversational Dialogue Systems](https://arxiv.org/abs/2202.13887)
 
 ## Installation
 
@@ -49,3 +49,18 @@ The file iterated over metrics and repeats the experiments 10 times. The seeds a
 ## Evaluate Logs
 
 `python -m src.reinforcement_learning.evaluate_logs` 
+
+
+## References
+If you use this code, please cite us:
+
+```
+@inproceedings{deriu2022metric_robustness,
+  title = {{Probing the Robustness of Trained Metrics for Conversational Dialogue Systems}},
+  author = {Deriu, Jan and Tuggener, Don and von D{\"a}niken, Pius and Cieliebak, Mark},
+  booktitle = {Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics},
+  address = {Dublin},
+  year = {2022},
+}
+
+
