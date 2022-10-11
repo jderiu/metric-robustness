@@ -53,6 +53,7 @@ def corr_to_humans(auto_metric, data, eval_batch_size, domain, metric_name):
             turn_id = batched_sample[i]['turn_id']
             system_name = batched_sample[i]['system_name']
             avg_rating = batched_sample[i]['avg_rating']
+            batched_sample[i][metric_name] = float(avg_per_sample_mlm_loss[i])
             ratings.append((
                 dialogue_id,
                 turn_id,
@@ -159,6 +160,8 @@ def perform_single_metric_test(metrics: List[str], domains: List[str]):
             spearman, pearson, tau, tau_comp, scores_for_system = corr_to_humans_eval(auto_metric, data, domain, metric)
             data_for_metric_domain[domain, metric] = (spearman, pearson, tau, tau_comp, scores_for_system)
 
+        data.dumb_samples()
+
     out_spearman = print_str(data_for_metric_domain, 'spearman', metrics)
     out_tau = print_str(data_for_metric_domain, 'tau', metrics)
     out_tau_comp = print_str(data_for_metric_domain, 'tau_comp', metrics)
@@ -214,7 +217,7 @@ if __name__ == '__main__':
     domains = ['dailydialog', 'empathetic', 'convai2']
 
     perform_single_metric_test(_metrics, domains)
-    perform_degenerate_strategy_test(_metrics, domains)
+    #perform_degenerate_strategy_test(_metrics, domains)
 
 
 
