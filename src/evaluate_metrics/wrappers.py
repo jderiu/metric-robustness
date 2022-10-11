@@ -7,7 +7,7 @@ from transformers.models.blenderbot.tokenization_blenderbot import BlenderbotTok
 from transformers.models.blenderbot.modeling_blenderbot import BlenderbotForConditionalGeneration
 from transformers.models.roberta import RobertaTokenizer, RobertaForSequenceClassification, RobertaForMaskedLM
 from src.metrics.adversarial_turing.interface import AdversarialTuring
-#from src.metrics.maude.models import TransitionPredictorMaxPool
+from src.metrics.maude.models import TransitionPredictorMaxPool
 from src.metrics.maude.utils import batch_dialogs, batchify
 from pytorch_lightning.trainer.trainer_io import load_hparams_from_tags_csv
 
