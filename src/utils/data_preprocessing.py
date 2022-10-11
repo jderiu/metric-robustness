@@ -48,6 +48,10 @@ class AutoMetricData():
         with open(f'data/annotated_data/annotated_data_{self.domain}.json', 'rt', encoding='utf-8') as ifile:
             self.db_samples = json.load(ifile)
 
+    def dumb_samples(self):
+        with open(f'data/annotated_data/annotated_rated_data_{self.domain}.json', 'wt', encoding='utf-8') as ifile:
+             json.dump(self.db_samples, ifile)
+
     def prepare_dicts(self):
         turns = set()
         for entry in self.db_samples:
