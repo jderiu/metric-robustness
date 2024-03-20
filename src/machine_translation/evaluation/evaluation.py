@@ -31,10 +31,4 @@ def compute_bleu(all_outputs: List[Dict]):
 
 
 def compute_avg_rating(all_outputs: List[Dict]):
-    all_ratings = []
-    for odict in all_outputs:
-        rate = odict['ratings']
-        all_ratings.append(rate)
-    s = sum(all_ratings)
-    n = len(all_ratings)
-    return float(s/n)
+    return sum([odict['rating'] for odict in all_outputs])/len(all_outputs)
