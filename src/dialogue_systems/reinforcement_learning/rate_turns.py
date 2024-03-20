@@ -1,4 +1,4 @@
-from src.evaluate_metrics.wrappers import ValueFunctWrapper, AutoMetricWrapper
+from src.dialogue_systems.evaluate_metrics.wrappers import ValueFunctWrapper, AutoMetricWrapper
 from typing import List, Dict
 
 
@@ -60,7 +60,6 @@ def compute_advantages(
             else:
                 advantage = -turn['value'] + turn['reward'] #end of episode needs to be handled differently
             turn['advantage'] = advantage
-
 
 def compute_values(
         dialogue_batch: List[List[Dict]],

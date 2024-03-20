@@ -6,10 +6,10 @@ from transformers import BlenderbotSmallForConditionalGeneration, BlenderbotSmal
 from transformers.models.blenderbot.tokenization_blenderbot import BlenderbotTokenizer
 from transformers.models.blenderbot.modeling_blenderbot import BlenderbotForConditionalGeneration
 
-from src.reinforcement_learning.data_loader import DataLoader
-from src.reinforcement_learning.actor_critic_loop import ActorCritic
-from src.evaluate_metrics.wrappers import get_metric
-from src.reinforcement_learning.utils.dialogue_system_wrapper import BlenderWrapper
+from src.dialogue_systems.reinforcement_learning.data_loader import DataLoader
+from src.dialogue_systems.reinforcement_learning.actor_critic_loop import ActorCritic
+from src.dialogue_systems.evaluate_metrics.wrappers import get_metric
+from src.dialogue_systems.reinforcement_learning.utils.dialogue_system_wrapper import BlenderWrapper
 
 
 if __name__ == '__main__':

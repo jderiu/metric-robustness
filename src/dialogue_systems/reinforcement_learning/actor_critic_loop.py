@@ -2,17 +2,17 @@ import os
 import torch
 import wandb
 import random
-from src.reinforcement_learning.utils.dialogue_system_wrapper import DialogueSystemWrapper
-from src.evaluate_metrics.wrappers import ValueFunctWrapper, AutoMetricWrapper
+from src.dialogue_systems.reinforcement_learning.utils.dialogue_system_wrapper import DialogueSystemWrapper
+from src.dialogue_systems.evaluate_metrics.wrappers import ValueFunctWrapper, AutoMetricWrapper
 from transformers.models.roberta import RobertaForSequenceClassification, RobertaTokenizer
 from typing import List, Dict
 from torch.optim import Adam
 from torch.nn import CrossEntropyLoss
 
-from src.reinforcement_learning.self_talk import sample_bot_talk
-from src.reinforcement_learning.rate_turns import rate_convos, compute_values, compute_advantages, get_avg_reward
-from src.reinforcement_learning.data_loader import DataLoader
-from src.reinforcement_learning.utils.analyse_outputs import analyse_context_overlap, analyse_lexical_variety,analyse_response_variety
+from src.dialogue_systems.reinforcement_learning.self_talk import sample_bot_talk
+from src.dialogue_systems.reinforcement_learning.rate_turns import rate_convos, compute_values, compute_advantages, get_avg_reward
+from src.dialogue_systems.reinforcement_learning.data_loader import DataLoader
+from src.dialogue_systems.reinforcement_learning.utils.analyse_outputs import analyse_context_overlap, analyse_lexical_variety,analyse_response_variety
 
 from tqdm import tqdm
 

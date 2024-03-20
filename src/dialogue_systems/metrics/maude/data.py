@@ -22,11 +22,11 @@ import numpy as np
 from tqdm import tqdm
 # from nltk.tokenize import sent_tokenize
 import copy
-from src.metrics.maude.logbook.logbook import LogBook
-from src.metrics.maude.args import get_args
+from src.dialogue_systems.metrics.maude.logbook.logbook import LogBook
+from src.dialogue_systems.metrics.maude.args import get_args
 from parlai.core.agents import create_agent
-from src.metrics.maude.backup.corrupt import CorruptDialog
-from src.metrics.maude.utils import batchify, batch_dialogs, batch_words, batch_yhats
+from src.dialogue_systems.metrics.maude.backup.corrupt import CorruptDialog
+from src.dialogue_systems.metrics.maude.utils import batchify, batch_dialogs, batch_words, batch_yhats
 import hashlib
 import pandas as pd
 

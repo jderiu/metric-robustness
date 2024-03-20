@@ -12,7 +12,7 @@ import numpy as np
 import os
 from torch.nn.utils.rnn import pack_padded_sequence, pad_packed_sequence
 from sklearn.decomposition import PCA, IncrementalPCA
-from src.metrics.maude.data import (
+from src.dialogue_systems.metrics.maude.data import (
     id_collate_fn,
     id_collate_nce_fn,
     context_collate_nce_fn,
@@ -20,7 +20,7 @@ from src.metrics.maude.data import (
 import pickle as pkl
 from tqdm import tqdm
 import copy
-from src.metrics.maude.net import Net
+from src.dialogue_systems.metrics.maude.net import Net
 
 
 class TransitionPredictorMaxPool(Net):
