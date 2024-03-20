@@ -82,6 +82,7 @@ if __name__ == '__main__':
         reward_fct=metric,
         gamma=gamma,
         batch_size=batch_size,
+        eval_batch_size=eval_batch_size,
         gen_batch_size=batch_size,
         gradient_accumulation_steps=gradient_accumulation_steps,
         logging_path=logging_path,

@@ -41,6 +41,7 @@ class ActorCritic:
             reward_fct: AutoMetric,
             gen_batch_size: int,
             batch_size: int,
+            eval_batch_size: int,
             gradient_accumulation_steps: int,
             gamma: float,
             logging_path: str,
@@ -52,6 +53,7 @@ class ActorCritic:
         self.reward_fct = reward_fct
 
         self.batch_size = batch_size
+        self.eval_batch_size = eval_batch_size
         self.gen_batch_size = gen_batch_size
         self.gradient_accumulation_steps = gradient_accumulation_steps
         self.gamma = gamma
@@ -81,9 +83,9 @@ class ActorCritic:
         sequential_sampler = SequentialSampler(dataset)
         batch_idx = []
         all_outputs = []
-        for idx, sample_idx in tqdm(enumerate(sequential_sampler, start=1)):
+        for idx, sample_idx in tqdm(enumerate(sequential_sampler, start=1), total=len(sequential_sampler)):
             batch_idx.append(sample_idx)
-            if not idx % self.batch_size == 0 or idx == len(dataset):
+            if not idx % self.eval_batch_size == 0 or idx == len(dataset):
                 continue
             batch = dataset[batch_idx]
             batch_idx = []
