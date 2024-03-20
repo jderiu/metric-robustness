@@ -66,7 +66,8 @@ if __name__ == '__main__':
         tgt_lang=hf_dataset_name['language_pair'][1],
         tokenizer=policy.tokenizer,
         max_length=max_length,
-        is_s2s=True
+        is_s2s=True,
+        is_t5=True
     )
 
     dataset = load_dataset(**hf_dataset_name, cache_dir=f'{base_path}/hf_cache')

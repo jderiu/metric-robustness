@@ -11,6 +11,7 @@ class WMTProcessor:
             gen_tokenizer: PreTrainedTokenizer= None,
             max_length: int= None,
             is_gen: bool= None,
+            is_t5: bool= None,
             is_s2s: bool= None
     ):
         self.src_lang = src_lang
@@ -20,6 +21,7 @@ class WMTProcessor:
         self.max_length = max_length
         self.is_gen = is_gen
         self.is_s2s = is_s2s
+        self.is_t5 = is_t5
 
     def processing(self, examples):
         if self.is_s2s:
@@ -67,8 +69,11 @@ class WMTProcessor:
             self,
             examples,
     ):
-
-        inputs = [ex[self.src_lang] for ex in examples['translation']]
+        if self.is_t5:
+            task = f'translate from {self.src_lang} to {self.tgt_lang}'
+            inputs = [task + ex[self.src_lang] for ex in examples['translation']]
+        else:
+            inputs = [ex[self.src_lang] for ex in examples['translation']]
         targets = [ex[self.tgt_lang] for ex in examples["translation"]]
 
         model_inputs = self.tokenizer(
