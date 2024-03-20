@@ -35,6 +35,7 @@ if __name__ == '__main__':
     device = config['device']
     base_path = config['base_path']
     from_pretrained = config['from_pretrained']
+    advantage_type = config['advantage_type']
 
     gamma = config['gamma']
     gradient_accumulation_steps = config['gradient_accumulation_steps']
@@ -96,6 +97,7 @@ if __name__ == '__main__':
         data_collator=data_collator,
         data_processor=processor,
         n_episodes=n_epochs,
-        advantage_type='sample'
+        advantage_type=advantage_type,
+        eval_0=True
     )
 
