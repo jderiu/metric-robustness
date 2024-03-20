@@ -267,15 +267,13 @@ class ActorCritic:
                     avg_value_loss = sum(value_losses)/len(value_losses)
                     avg_rewards = sum(rewards)/len(rewards)
 
-                    lm_loss = lm_loss.mean()
-                    avg_reward = torch.tensor(ratings).mean()
                     print(f'Sample: {idx}\tPolicy Loss: {float(avg_policy_loss):.4f}\tValue Loss: {float(avg_value_loss):.4f}\tReward: {float(avg_rewards):.4f}\tLM Loss: {float(avg_lm_loss):.4f}')
                     wandb.log(
                         {
-                            'train/policy_loss': float(policy_loss),
-                            'train/value_loss': float(value_loss),
-                            'train/avg_reward': float(avg_reward),
-                            'train/lm_loss': float(lm_loss)
+                            'train/policy_loss': float(avg_policy_loss),
+                            'train/value_loss': float(avg_value_loss),
+                            'train/avg_reward': float(avg_rewards),
+                            'train/lm_loss': float(avg_value_loss)
                         }
                     )
 
