@@ -70,7 +70,7 @@ class WMTProcessor:
             examples,
     ):
         if self.is_t5:
-            task = f'translate from {self.src_lang} to {self.tgt_lang}'
+            task = f'translate from {self.src_lang} to {self.tgt_lang}: '
             inputs = [task + ex[self.src_lang] for ex in examples['translation']]
         else:
             inputs = [ex[self.src_lang] for ex in examples['translation']]

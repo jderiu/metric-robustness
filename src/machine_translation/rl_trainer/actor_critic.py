@@ -206,6 +206,7 @@ class ActorCritic:
             wandb.log({'eval/reward': float(avg_reward)})
         for ep in range(1, n_episodes):
             random_sampler = RandomSampler(train_dataset)
+            n_samples = len(random_sampler)
             print(f'Epoch: {ep}')
             batch_idx = []
             current_accumulation = self.gradient_accumulation_steps
@@ -267,7 +268,7 @@ class ActorCritic:
                     avg_value_loss = sum(value_losses)/len(value_losses)
                     avg_rewards = sum(rewards)/len(rewards)
 
-                    print(f'Sample: {idx}\tPolicy Loss: {float(avg_policy_loss):.4f}\tValue Loss: {float(avg_value_loss):.4f}\tReward: {float(avg_rewards):.4f}\tLM Loss: {float(avg_lm_loss):.4f}')
+                    print(f'Sample: {idx}/{n_samples}\tPolicy Loss: {float(avg_policy_loss):.4f}\tValue Loss: {float(avg_value_loss):.4f}\tReward: {float(avg_rewards):.4f}\tLM Loss: {float(avg_lm_loss):.4f}')
                     wandb.log(
                         {
                             'train/policy_loss': float(avg_policy_loss),

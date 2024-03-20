@@ -67,7 +67,7 @@ if __name__ == '__main__':
         tokenizer=policy.tokenizer,
         max_length=max_length,
         is_s2s=True,
-        is_t5=True
+        is_t5=False
     )
 
     dataset = load_dataset(**hf_dataset_name, cache_dir=f'{base_path}/hf_cache')
