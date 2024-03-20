@@ -36,6 +36,7 @@ if __name__ == '__main__':
     base_path = config['base_path']
     from_pretrained = config['from_pretrained']
     advantage_type = config['advantage_type']
+    eval_0 = config['eval_0']
 
     gamma = config['gamma']
     gradient_accumulation_steps = config['gradient_accumulation_steps']
@@ -99,6 +100,6 @@ if __name__ == '__main__':
         data_processor=processor,
         n_episodes=n_epochs,
         advantage_type=advantage_type,
-        eval_0=True
+        eval_0=eval_0
     )
 
