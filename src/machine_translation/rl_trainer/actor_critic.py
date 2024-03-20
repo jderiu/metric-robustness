@@ -252,7 +252,7 @@ class ActorCritic:
                 full_loss.backward()
                 current_accumulation -= 1
                 policy_losses.extend(policy_loss.detach().cpu().tolist())
-                lm_losses.extend(lm_loss.detach().cpu().tolist())
+                lm_losses.extend(lm_loss.mean(1).detach().cpu().tolist())
                 value_losses.extend(value_loss.detach().cpu().tolist())
                 rewards.extend(ratings)
 
