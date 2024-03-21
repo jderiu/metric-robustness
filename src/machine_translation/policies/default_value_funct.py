@@ -11,7 +11,7 @@ class ValueFunction(nn.Module):
     def __init__(self, *args, **kwargs):
         super(ValueFunction, self).__init__(*args, **kwargs)
 
-    def compute_value(self, batch_input):
+    def compute_value(self, batch_input, tgt_len):
         pass
 
 
@@ -33,7 +33,7 @@ class SeqClassifierValueFunction(ValueFunction):
 
         self.tokenizer = AutoTokenizer.from_pretrained(path)
 
-    def compute_value(self, batch_input):
+    def compute_value(self, batch_input, tgt_len):
         output: SequenceClassifierOutput = self.model(
             input_ids=batch_input["input_ids"].to(self.model.device),
             attention_mask=batch_input["attention_mask"].to(self.model.device),
