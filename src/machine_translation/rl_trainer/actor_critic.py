@@ -161,7 +161,7 @@ class ActorCritic:
     def compute_token_advantage(self, values, labels, lengths, rewards):
         rewards = torch.tensor(rewards, device=self.device)
         values = torch.cat([values, torch.zeros_like(rewards)[:, None]], dim=1)
-        values[torch.arange(8), lengths.to(self.device)] = rewards
+        values[torch.arange(values.shape[0]), lengths.to(self.device)] = rewards
         values_p1 = values.detach()
         advantages = self.gamma * values_p1[:, 1:] - values[:, :-1]
 
