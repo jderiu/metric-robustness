@@ -8,6 +8,7 @@ from transformers.trainer import RandomSampler, SequentialSampler
 from datasets import Dataset
 
 from src.machine_translation.metrics.default_metric import AutoMetric
+from src.machine_translation.policies.default_value_funct import ValueFunction
 from src.machine_translation.policies.default_policy import Policy
 from src.machine_translation.data_processing.processing_functions import WMTProcessor
 from src.machine_translation.evaluation.evaluation import analyse_lexical_variety, compute_bleu, compute_avg_rating
@@ -16,28 +17,12 @@ from torch.nn import CrossEntropyLoss
 
 from tqdm import tqdm
 
-
-# Copied from transformers.models.bart.modeling_bart.shift_tokens_right
-def shift_tokens_right(input_ids: torch.Tensor, pad_token_id: int, decoder_start_token_id: int):
-    """
-    Shift input ids one token to the right.
-    """
-    shifted_input_ids = input_ids.new_zeros(input_ids.shape)
-    shifted_input_ids[:, 1:] = input_ids[:, :-1].clone()
-    shifted_input_ids[:, 0] = decoder_start_token_id
-
-    assert pad_token_id is not None, "self.model.config.pad_token_id has to be defined."
-    # replace possible -100 values in labels by `pad_token_id`
-    shifted_input_ids.masked_fill_(shifted_input_ids == -100, pad_token_id)
-
-    return shifted_input_ids
-
-
 class ActorCritic:
 
     def __init__(
             self,
             policy: Policy,
+            value_fct: ValueFunction,
             reward_fct: AutoMetric,
             gen_batch_size: int,
             batch_size: int,
@@ -49,6 +34,7 @@ class ActorCritic:
             valid_steps: int
     ):
         self.policy = policy
+        self.value_fct = value_fct
 
         self.reward_fct = reward_fct
 
@@ -146,6 +132,19 @@ class ActorCritic:
         collated_batch = data_collator(transposed_list)
         return collated_batch
 
+    def create_value_input_batch(self, batch, data_processor, data_collator,sampled_outputs=None):
+        if sampled_outputs is not None:
+            for i, ex in enumerate(batch["translation"]):
+                ex[data_processor.tgt_lang] = sampled_outputs[i]
+        processed_batch = data_processor.wmt_seq_clf_processing_function(batch)
+        transposed_list = [{
+            'input_ids': processed_batch.data['input_ids'][i],
+            'attention_mask': processed_batch.data['attention_mask'][i],
+        } for i in range(len(processed_batch.encodings))]
+
+        collated_batch = data_collator(transposed_list)
+        return collated_batch
+
     def update_batch(self, batch, sampled_outputs, data_processor, data_collator):
         for i, ex in enumerate(batch["translation"]):
             ex[data_processor.tgt_lang] = sampled_outputs[i]
@@ -188,6 +187,8 @@ class ActorCritic:
             valid_dataset: Dataset,
             data_collator: DataCollator,
             data_processor: WMTProcessor,
+            value_data_collator: DataCollator,
+            value_data_processor: WMTProcessor,
             n_episodes: int,
             advantage_type: str = 'sample',
             eval_0=False
@@ -229,7 +230,11 @@ class ActorCritic:
                 ratings = self.reward_fct.batch_rating(merged_outputs)
                 collated_batch = self.update_batch(batch, sampled_outputs, data_processor, data_collator)
 
-                values = self.policy.compute_value(collated_batch)
+                if self.value_fct is None:
+                    values = self.policy.compute_value(collated_batch)
+                else:
+                    value_batch = self.create_value_input_batch(batch, data_processor, data_collator, sampled_outputs)
+                    values = self.value_fct.compute_value(value_batch).unsqueeze(-1)
 
                 logits = self.policy(collated_batch)
                 lm_loss = self.compute_lm_loss(logits, collated_batch['labels'])

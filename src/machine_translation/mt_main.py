@@ -1,10 +1,11 @@
 import json, argparse, os, wandb
 from datasets import load_dataset
 
-from transformers import DataCollatorForSeq2Seq
+from transformers import DataCollatorForSeq2Seq, DataCollatorWithPadding
 
 from src.machine_translation.policies.default_policy import Seq2SeqPolicy
 from src.machine_translation.metrics.default_metric import CometMetric
+from src.machine_translation.policies.default_value_funct import SeqClassifierValueFunction
 from src.machine_translation.data_processing.processing_functions import WMTProcessor
 
 from src.machine_translation.rl_trainer.actor_critic import ActorCritic
@@ -37,6 +38,7 @@ if __name__ == '__main__':
     from_pretrained = config['from_pretrained']
     advantage_type = config['advantage_type']
     eval_0 = config['eval_0']
+    value_fct_path = config['value_fct_path']
 
     gamma = config['gamma']
     gradient_accumulation_steps = config['gradient_accumulation_steps']
@@ -61,6 +63,11 @@ if __name__ == '__main__':
     )
     policy.to(device)
 
+    value_fct = None
+    if value_fct_path is not None:
+        value_fct = SeqClassifierValueFunction(value_fct_path, from_pretrained)
+        value_fct.to(device)
+
     processor = WMTProcessor(
         src_lang=hf_dataset_name['language_pair'][0],
         tgt_lang=hf_dataset_name['language_pair'][1],
@@ -70,17 +77,26 @@ if __name__ == '__main__':
         is_t5=False
     )
 
+    value_processor = WMTProcessor(
+        src_lang=hf_dataset_name['language_pair'][0],
+        tgt_lang=hf_dataset_name['language_pair'][1],
+        tokenizer=value_fct.tokenizer,
+        max_length=max_length,
+    )
+
     dataset = load_dataset(**hf_dataset_name, cache_dir=f'{base_path}/hf_cache')
 
     train = dataset['train']
     valid = dataset['validation']
 
     data_collator = DataCollatorForSeq2Seq(policy.tokenizer, pad_to_multiple_of=4)
+    value_data_collator = DataCollatorWithPadding(value_fct.tokenizer)
 
     metric = CometMetric()
 
     trainer = ActorCritic(
         policy=policy,
+        value_fct=value_fct,
         reward_fct=metric,
         gamma=gamma,
         batch_size=batch_size,
@@ -99,6 +115,8 @@ if __name__ == '__main__':
         valid_dataset=valid,
         data_collator=data_collator,
         data_processor=processor,
+        value_data_collator=value_data_collator,
+        value_data_processor=value_processor,
         n_episodes=n_epochs,
         advantage_type=advantage_type,
         eval_0=eval_0

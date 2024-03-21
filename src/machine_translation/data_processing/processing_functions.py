@@ -85,3 +85,19 @@ class WMTProcessor:
         )
 
         return model_inputs
+
+    def wmt_seq_clf_processing_function(self, examples):
+        inputs = [ex[self.src_lang] for ex in examples["translation"]]
+        targets = [ex[self.tgt_lang] for ex in examples["translation"]]
+
+        texts = [
+            f'<{self.src_lang}>{source}<{self.tgt_lang}>{target}' for source, target in zip(inputs, targets)
+        ]
+
+        model_inputs = self.tokenizer(
+            texts,
+            max_length=self.max_length,
+            truncation=True,
+        )
+
+        return model_inputs
