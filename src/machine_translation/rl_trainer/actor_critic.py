@@ -46,8 +46,8 @@ class ActorCritic:
         self.device = policy.model.device
         self.valid_steps = valid_steps
 
-        self.policy_opt = Adam(self.policy.model.parameters(), lr=3e-06)
-        self.value_opt = Adam(self.policy.model.parameters(), lr=3e-05)
+        self.policy_opt = Adam(self.policy.model.parameters(), lr=3e-05)
+        self.value_opt = Adam(self.value_fct.model.parameters(), lr=3e-05)
 
         self.logging_path = logging_path
         self.models_path = models_path
@@ -140,6 +140,7 @@ class ActorCritic:
         transposed_list = [{
             'input_ids': processed_batch.data['input_ids'][i],
             'attention_mask': processed_batch.data['attention_mask'][i],
+            'length': processed_batch.data['tgt_length'][i],
         } for i in range(len(processed_batch.encodings))]
 
         collated_batch = data_collator(transposed_list)
@@ -158,13 +159,21 @@ class ActorCritic:
         return batch
 
     def compute_token_advantage(self, values, labels, lengths, rewards):
-        masked_stp1 = (values[:, 1:] * (labels[:, 1:].to(self.device) != -100)).detach()
-        masked_st = values[:, :-1] * (labels[:, :-1].to(self.device) != -100)
+        rewards = torch.tensor(rewards, device=self.device)
+        values = torch.cat([values, torch.zeros_like(rewards)[:, None]], dim=1)
+        values[torch.arange(8), lengths.to(self.device)] = rewards
+        values_p1 = values.detach()
+        advantages = self.gamma * values_p1[:, 1:] - values[:, :-1]
 
-        diff = self.gamma * masked_stp1 - masked_st
-        advantages = torch.tensor(rewards, device=self.device) - values[:, -1]
-
-        advantages = torch.cat([diff, advantages[:, None]], dim=1)
+        # masked_stp1 = (ext_values[:, 1:] * (labels[:, 1:].to(self.device) != -100)).detach()
+        # masked_st = ext_values[:, :-1] * (labels[:, :-1].to(self.device) != -100)
+        #
+        # diff = self.gamma * masked_stp1 - masked_st
+        # final_diff = torch.tensor(rewards, device=self.device) - values[:, -1]
+        #
+        # advantages = torch.zeros_like(values)
+        # advantages[:, :-1] = diff
+        # advantages[torch.arange(8), lengths.to(self.device)] = final_diff
 
         return advantages
 
@@ -230,14 +239,15 @@ class ActorCritic:
                 ratings = self.reward_fct.batch_rating(merged_outputs)
                 collated_batch = self.update_batch(batch, sampled_outputs, data_processor, data_collator)
 
-                if self.value_fct is None:
-                    values = self.policy.compute_value(collated_batch)
-                else:
-                    value_batch = self.create_value_input_batch(batch, data_processor, data_collator, sampled_outputs)
-                    values = self.value_fct.compute_value(value_batch).unsqueeze(-1)
-
                 logits = self.policy(collated_batch)
                 lm_loss = self.compute_lm_loss(logits, collated_batch['labels'])
+
+                if self.value_fct is None:
+                    value_batch = collated_batch
+                    values = self.policy.compute_value(collated_batch)
+                else:
+                    value_batch = self.create_value_input_batch(batch, value_data_processor, value_data_collator, sampled_outputs)
+                    values = self.value_fct.compute_value(value_batch, logits.shape[1])
 
                 if advantage_type == 'sample':
                     advantages = self.compute_sample_advantage(values, ratings)
@@ -247,15 +257,19 @@ class ActorCritic:
                     advantages = self.compute_token_advantage(
                         values.squeeze(-1),
                         collated_batch['labels'],
-                        collated_batch['length'],
+                        value_batch['length'],
                         ratings
                     )
                     value_loss = (advantages ** 2).mean(1)
                     policy_loss = (advantages.detach() * lm_loss).mean(1)
 
-                full_loss = policy_loss.sum() + value_loss.sum()
+                if self.value_fct is None:
+                    full_loss = policy_loss.sum() + value_loss.sum()
+                    full_loss.backward()
+                else:
+                    value_loss.sum().backward()
+                    policy_loss.sum().backward()
 
-                full_loss.backward()
                 current_accumulation -= 1
                 policy_losses.extend(policy_loss.detach().cpu().tolist())
                 lm_losses.extend(lm_loss.mean(1).detach().cpu().tolist())
@@ -266,6 +280,11 @@ class ActorCritic:
                     torch.nn.utils.clip_grad_norm_(self.policy.model.parameters(), 1.0)
                     self.policy_opt.step()
                     self.policy_opt.zero_grad()
+
+                    if self.value_fct is not None:
+                        torch.nn.utils.clip_grad_norm_(self.value_fct.model.parameters(), 1.0)
+                        self.value_opt.step()
+                        self.value_opt.zero_grad()
                     current_accumulation = self.gradient_accumulation_steps
 
                     avg_policy_loss = sum(policy_losses)/len(policy_losses)
@@ -279,7 +298,7 @@ class ActorCritic:
                             'train/policy_loss': float(avg_policy_loss),
                             'train/value_loss': float(avg_value_loss),
                             'train/avg_reward': float(avg_rewards),
-                            'train/lm_loss': float(avg_value_loss)
+                            'train/lm_loss': float(avg_lm_loss)
                         }
                     )
 

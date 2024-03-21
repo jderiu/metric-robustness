@@ -22,6 +22,8 @@ class WMTProcessor:
         self.is_gen = is_gen
         self.is_s2s = is_s2s
         self.is_t5 = is_t5
+        if self.tokenizer is None:
+            self.tokenizer.sep_tokens = '<sep>'
 
     def processing(self, examples):
         if self.is_s2s:
@@ -91,7 +93,7 @@ class WMTProcessor:
         targets = [ex[self.tgt_lang] for ex in examples["translation"]]
 
         texts = [
-            f'<{self.src_lang}>{source}<{self.tgt_lang}>{target}' for source, target in zip(inputs, targets)
+            f'<{self.src_lang}>{source}<{self.tgt_lang}>{self.tokenizer.sep_token}{target}' for source, target in zip(inputs, targets)
         ]
 
         model_inputs = self.tokenizer(
@@ -99,5 +101,7 @@ class WMTProcessor:
             max_length=self.max_length,
             truncation=True,
         )
+
+        model_inputs['tgt_length'] = self.tokenizer(targets,max_length=self.max_length,truncation=True, return_length=True)['length']
 
         return model_inputs

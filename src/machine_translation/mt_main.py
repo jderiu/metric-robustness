@@ -5,7 +5,7 @@ from transformers import DataCollatorForSeq2Seq, DataCollatorWithPadding
 
 from src.machine_translation.policies.default_policy import Seq2SeqPolicy
 from src.machine_translation.metrics.default_metric import CometMetric
-from src.machine_translation.policies.default_value_funct import SeqClassifierValueFunction
+from src.machine_translation.policies.default_value_funct import SeqClassifierValueFunction, TokClassifierValueFunction
 from src.machine_translation.data_processing.processing_functions import WMTProcessor
 
 from src.machine_translation.rl_trainer.actor_critic import ActorCritic
@@ -65,7 +65,10 @@ if __name__ == '__main__':
 
     value_fct = None
     if value_fct_path is not None:
-        value_fct = SeqClassifierValueFunction(value_fct_path, from_pretrained)
+        if advantage_type == 'sample':
+            value_fct = SeqClassifierValueFunction(value_fct_path, from_pretrained)
+        else:
+            value_fct = TokClassifierValueFunction(value_fct_path, from_pretrained)
         value_fct.to(device)
 
     processor = WMTProcessor(
