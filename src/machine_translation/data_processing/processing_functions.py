@@ -22,8 +22,10 @@ class WMTProcessor:
         self.is_gen = is_gen
         self.is_s2s = is_s2s
         self.is_t5 = is_t5
-        if self.tokenizer is None:
-            self.tokenizer.sep_tokens = '<sep>'
+        if self.tokenizer.sep_token is None:
+            self.tokenizer.sep_token = '<sep>'
+        tokenizer.src_lang = src_lang
+        tokenizer.tgt_lang = tgt_lang
 
     def processing(self, examples):
         if self.is_s2s:

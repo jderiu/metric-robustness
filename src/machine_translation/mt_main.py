@@ -87,7 +87,7 @@ if __name__ == '__main__':
         max_length=max_length,
     )
 
-    dataset = load_dataset(**hf_dataset_name, cache_dir=f'{base_path}/hf_cache')
+    dataset = load_dataset(**hf_dataset_name, cache_dir=f'{base_path}/hf_cache', trust_remote_code=True)
 
     train = dataset['train']
     valid = dataset['validation']

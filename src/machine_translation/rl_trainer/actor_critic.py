@@ -127,7 +127,7 @@ class ActorCritic:
             'attention_mask': processed_batch.data['attention_mask'][i],
             'length': processed_batch.data['length'][i],
             'labels': processed_batch.data['labels'][i]
-        } for i in range(len(processed_batch.encodings))]
+        } for i in range(len(processed_batch['input_ids']))]
 
         collated_batch = data_collator(transposed_list)
         return collated_batch
