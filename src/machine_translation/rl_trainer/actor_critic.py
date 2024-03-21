@@ -46,7 +46,7 @@ class ActorCritic:
         self.device = policy.model.device
         self.valid_steps = valid_steps
 
-        self.policy_opt = Adam(self.policy.model.parameters(), lr=3e-05)
+        self.policy_opt = Adam(self.policy.model.parameters(), lr=3e-06)
         self.value_opt = Adam(self.value_fct.model.parameters(), lr=3e-05)
 
         self.logging_path = logging_path

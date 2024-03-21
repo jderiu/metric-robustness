@@ -6,13 +6,13 @@ class WMTProcessor:
     def __init__(
             self,
             src_lang: str = None,
-            tgt_lang: str= None,
-            tokenizer: PreTrainedTokenizer= None,
-            gen_tokenizer: PreTrainedTokenizer= None,
-            max_length: int= None,
-            is_gen: bool= None,
-            is_t5: bool= None,
-            is_s2s: bool= None
+            tgt_lang: str = None,
+            tokenizer: PreTrainedTokenizer = None,
+            gen_tokenizer: PreTrainedTokenizer = None,
+            max_length: int = None,
+            is_gen: bool = None,
+            is_t5: bool = None,
+            is_s2s: bool = None
     ):
         self.src_lang = src_lang
         self.tgt_lang = tgt_lang
@@ -93,7 +93,8 @@ class WMTProcessor:
         targets = [ex[self.tgt_lang] for ex in examples["translation"]]
 
         texts = [
-            f'<{self.src_lang}>{source}<{self.tgt_lang}>{self.tokenizer.sep_token}{target}' for source, target in zip(inputs, targets)
+            f'<{self.src_lang}>{source}<{self.tgt_lang}>{self.tokenizer.sep_token}{target}' for source, target in
+            zip(inputs, targets)
         ]
 
         model_inputs = self.tokenizer(
@@ -102,6 +103,7 @@ class WMTProcessor:
             truncation=True,
         )
 
-        model_inputs['tgt_length'] = self.tokenizer(targets,max_length=self.max_length,truncation=True, return_length=True)['length']
+        model_inputs['tgt_length'] = \
+        self.tokenizer(targets, max_length=self.max_length, truncation=True, return_length=True)['length']
 
         return model_inputs
